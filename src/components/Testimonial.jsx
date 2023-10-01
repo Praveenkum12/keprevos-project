@@ -16,8 +16,8 @@ function Testimonial() {
     <section
       className="section section-testimonial"
       data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="1200"
+      data-aos-delay="200"
+      data-aos-duration="1500"
       data-aos-once="true"
     >
       <h1 className="testimonial-heading">Testimonial</h1>

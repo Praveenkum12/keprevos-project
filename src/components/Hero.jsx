@@ -1,8 +1,25 @@
+import { useEffect, useRef } from "react";
 import heroImg from "../assets/Exclude.png";
 
-function Hero() {
+function Hero({ setMyElementIsVisible }) {
+  const myRef = useRef();
+
+  useEffect(
+    function () {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          const [entry] = entries;
+          setMyElementIsVisible(entry.isIntersecting);
+        },
+        { root: null, threshold: 0, rootMargin: "-63px" }
+      );
+      observer.observe(myRef.current);
+    },
+    [setMyElementIsVisible]
+  );
+
   return (
-    <header className="header container">
+    <header className="header container" ref={myRef}>
       <div className="header__heading--box">
         <p className="header__heading--text">
           <span className="gen-span">

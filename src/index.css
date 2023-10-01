@@ -30,18 +30,43 @@ body {
 .logo {
   font-size: 4.4rem;
   font-weight: 800;
-  color: #000;
+  color: var(--color-primary-dark);
 }
 
 .nav {
+  width: 140rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.nav-sticky {
+  width: 140rem;
+  height: 7.2rem;
+  padding: 0 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: rgba(95, 154, 206, 0.97);
+}
+
+.nav-outer {
+  height: 88.6px;
+}
+
 .cover-all {
   max-width: 100vw;
   background-color: var(--color-primary-light);
+  position: relative;
 }
 
 .container {

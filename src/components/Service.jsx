@@ -8,8 +8,8 @@ function Service() {
       className="section service-section"
       id="service"
       data-aos="fade-up"
-      data-aos-delay="50"
-      data-aos-duration="1200"
+      data-aos-delay="200"
+      data-aos-duration="1500"
       data-aos-once="true"
     >
       <div className="service">
