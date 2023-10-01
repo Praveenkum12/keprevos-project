@@ -3,7 +3,13 @@ import peopleImg from "../assets/people.png";
 
 function About() {
   return (
-    <section className="section about-section">
+    <section
+      className="section about-section"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+      data-aos-once="true"
+    >
       <div className="about">
         <div className="about-img-box">
           <img

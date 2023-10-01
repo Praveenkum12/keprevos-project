@@ -4,7 +4,14 @@ import designThree from "../assets/marketingImg.png";
 
 function Service() {
   return (
-    <section className="section service-section" id="service">
+    <section
+      className="section service-section"
+      id="service"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+      data-aos-once="true"
+    >
       <div className="service">
         <div className="service-top">
           <h3 className="sm-heading">What we do</h3>

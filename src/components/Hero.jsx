@@ -28,6 +28,8 @@ function Hero() {
           src={heroImg}
           alt="people working background"
           className="header__img"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
         />
       </div>
       <div className="btn-box">

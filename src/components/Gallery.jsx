@@ -27,7 +27,13 @@ function Gallery() {
     right1: { x: "50%", scale: 0.7, zIndex: 2 },
   };
   return (
-    <section className="section gallery">
+    <section
+      className="section gallery"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+      data-aos-once="true"
+    >
       <div className="gallery-container">
         <h1 className="gallery-heading">Gallery</h1>
         {images.map((image, index) => {

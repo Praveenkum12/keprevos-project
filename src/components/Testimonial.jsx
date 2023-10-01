@@ -5,12 +5,21 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import clientOne from "../assets/clientOne.png";
+import clientTwo from "../assets/clientTwo.png";
+import clientThree from "../assets/clientThree.png";
+import clientFour from "../assets/clientFour.png";
 
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 function Testimonial() {
   return (
-    <div>
+    <section
+      className="section section-testimonial"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+      data-aos-once="true"
+    >
       <h1 className="testimonial-heading">Testimonial</h1>
       <Swiper
         autoplay={{
@@ -59,7 +68,7 @@ function Testimonial() {
             <div className="slide-left">
               <div className="blue-box">
                 <div className="slide-img-box">
-                  <img src={clientOne} alt="client" />
+                  <img src={clientTwo} alt="client" />
                 </div>
               </div>
             </div>
@@ -86,7 +95,7 @@ function Testimonial() {
             <div className="slide-left">
               <div className="blue-box">
                 <div className="slide-img-box">
-                  <img src={clientOne} alt="client" />
+                  <img src={clientThree} alt="client" />
                 </div>
               </div>
             </div>
@@ -113,7 +122,7 @@ function Testimonial() {
             <div className="slide-left">
               <div className="blue-box">
                 <div className="slide-img-box">
-                  <img src={clientOne} alt="client" />
+                  <img src={clientFour} alt="client" />
                 </div>
               </div>
             </div>
@@ -136,7 +145,7 @@ function Testimonial() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 }
 
