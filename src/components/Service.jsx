@@ -6,7 +6,7 @@ function Service() {
   return (
     <section
       className="section service-section"
-      id="service"
+      id="services"
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="1500"

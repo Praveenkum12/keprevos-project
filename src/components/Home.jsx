@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import NavBar from "./NavBar";
 import Service from "./Service";
 import Testimonial from "./Testimonial";
+import FeaturedIn from "./FeaturedIn";
 
 function Home() {
   const [myElementIsVisible, setMyElementIsVisible] = useState(true);
@@ -17,6 +18,7 @@ function Home() {
         <Service />
         <Testimonial />
         <Gallery />
+        <FeaturedIn />
       </main>
     </div>
   );

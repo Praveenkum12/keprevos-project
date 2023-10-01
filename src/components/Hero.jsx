@@ -11,7 +11,7 @@ function Hero({ setMyElementIsVisible }) {
           const [entry] = entries;
           setMyElementIsVisible(entry.isIntersecting);
         },
-        { root: null, threshold: 0, rootMargin: "-63px" }
+        { root: null, threshold: 0 }
       );
       observer.observe(myRef.current);
     },
@@ -19,7 +19,7 @@ function Hero({ setMyElementIsVisible }) {
   );
 
   return (
-    <header className="header container" ref={myRef}>
+    <header className="header container" ref={myRef} id="hero">
       <div className="header__heading--box">
         <p className="header__heading--text">
           <span className="gen-span">

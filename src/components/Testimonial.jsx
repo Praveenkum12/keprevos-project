@@ -19,6 +19,7 @@ function Testimonial() {
       data-aos-delay="200"
       data-aos-duration="1500"
       data-aos-once="true"
+      id="testimonial"
     >
       <h1 className="testimonial-heading">Testimonial</h1>
       <Swiper

@@ -33,6 +33,7 @@ function Gallery() {
       data-aos-delay="200"
       data-aos-duration="1500"
       data-aos-once="true"
+      id="gallery"
     >
       <div className="gallery-container">
         <h1 className="gallery-heading">Gallery</h1>

@@ -9,6 +9,7 @@ function About() {
       data-aos-delay="200"
       data-aos-duration="1500"
       data-aos-once="true"
+      id="about"
     >
       <div className="about">
         <div className="about-img-box">
