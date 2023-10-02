@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import peopleImg from "../assets/people.png";
 
-function About() {
+function About({ handleLearnClick }) {
   return (
     <section
       className="section about-section"
@@ -33,7 +33,7 @@ function About() {
             imbibed, vision we have gained and the goal we are striving to
             achieve.
           </p>
-          <Link className="read-btn">
+          <Link to="/" className="read-btn" onClick={handleLearnClick}>
             Read More <span className="arrow-right">{`>`}</span>
           </Link>
         </div>

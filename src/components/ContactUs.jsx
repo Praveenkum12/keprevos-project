@@ -2,7 +2,14 @@ import getInTouchImg from "../assets/getInTouchImg.png";
 
 function ContactUs() {
   return (
-    <section className="section contact-section container" id="contact">
+    <section
+      className="section contact-section container"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1500"
+      data-aos-once="true"
+    >
       <div className="contact-inner">
         <div className="contact-container">
           <div className="contact-left">

@@ -1,7 +1,6 @@
 import { Link } from "react-scroll";
 
 function NavBar({ myElementIsVisible }) {
-  console.log("Navbar" + myElementIsVisible);
   return (
     <div className="nav-outer">
       <nav className={myElementIsVisible ? "nav" : "nav-sticky"}>
@@ -45,7 +44,7 @@ function NavBar({ myElementIsVisible }) {
             to="contact"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-80}
             duration={500}
           >
             CONTACT US

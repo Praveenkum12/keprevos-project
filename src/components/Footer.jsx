@@ -6,12 +6,24 @@ import fb from "../svg/fb.svg";
 import insta from "../svg/insta.svg";
 import twit from "../svg/twit.svg";
 import indeed from "../svg/indeed.svg";
+import { useRef } from "react";
+import { useEffect } from "react";
 
-function Footer() {
+function Footer({ handleLearnClick }) {
+  const yearRef = useRef();
+  useEffect(function () {
+    yearRef.current.textContent = new Date().getFullYear();
+  });
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-left">
+        <div
+          className="footer-left"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <Link to="hero" spy={true} smooth={true} offset={-100} duration={500}>
             <img
               src={footerImg}
@@ -25,10 +37,18 @@ function Footer() {
             voluptas.
           </p>
           <div>
-            <button className="footer-btn">Read More &gt;</button>
+            <button className="footer-btn" onClick={handleLearnClick}>
+              Read More &gt;
+            </button>
           </div>
         </div>
-        <div className="footer-middle">
+        <div
+          className="footer-middle"
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <div className="footer-out">
             <h3 className="footer-sub-heading">Contact Us</h3>
             <div>
@@ -51,7 +71,13 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="footer-right">
+        <div
+          className="footer-right"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
           <h3 className="footer-heading-side">🗞️ For Daily Updates</h3>
           <form className="form-for-news">
             <input
@@ -64,23 +90,30 @@ function Footer() {
           </form>
 
           <div className="social-box">
-            <Link>
+            <Link to="/">
               <img src={indeed} alt="indeed" />
             </Link>
 
-            <Link>
+            <Link to="/">
               <img src={insta} alt="instagram" />
             </Link>
 
-            <Link>
+            <Link to="/">
               <img src={fb} alt="facebook" />
             </Link>
 
-            <Link>
+            <Link to="/">
               <img src={twit} alt="twitter" />
             </Link>
           </div>
         </div>
+      </div>
+
+      <div className="copyright-box">
+        <p className="copyright">
+          Copyright © <span ref={yearRef}>2000</span> by Keprevos, Inc. All
+          rights reserved (For study purpose only).
+        </p>
       </div>
     </footer>
   );

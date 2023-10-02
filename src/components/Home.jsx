@@ -11,20 +11,29 @@ import Footer from "./Footer";
 
 function Home() {
   const [myElementIsVisible, setMyElementIsVisible] = useState(true);
+
+  function handleLearnClick() {
+    alert("This feature will get integrate in the future. Peace out 😁✌️");
+  }
   return (
-    <div className="cover-all">
-      <NavBar myElementIsVisible={myElementIsVisible} />
-      <Hero setMyElementIsVisible={setMyElementIsVisible} />
-      <main className="container bg-white">
-        <About />
-        <Service />
-        <FeaturedIn />
-        <Testimonial />
-        <Gallery />
-      </main>
-      <ContactUs />
-      <Footer />
-    </div>
+    <>
+      <div className="cover-all">
+        <NavBar myElementIsVisible={myElementIsVisible} />
+        <Hero
+          setMyElementIsVisible={setMyElementIsVisible}
+          handleLearnClick={handleLearnClick}
+        />
+        <main className="container bg-white">
+          <About handleLearnClick={handleLearnClick} />
+          <Service />
+          <FeaturedIn />
+          <Testimonial />
+          <Gallery />
+        </main>
+        <ContactUs />
+      </div>
+      <Footer handleLearnClick={handleLearnClick} />
+    </>
   );
 }
 
