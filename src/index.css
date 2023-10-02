@@ -497,13 +497,13 @@ a:visited {
 
 .gallery {
   margin-top: 5rem;
-  /* background-color: #f3f3f3; */
-  background-image: linear-gradient(
+  background-image: url(./assets/storeImg.png);
+
+  /* background-image: linear-gradient(
       rgba(36, 21, 86, 0.8),
       rgba(36, 21, 86, 0.5)
-        /*rgba(80, 47, 190, 0.374), rgba(243, 243, 243, 0.219) */
     ),
-    url(./assets/dubai-bg.jpg);
+    url(./assets/dubai-bg.jpg); */
   background-position: center;
   background-size: cover;
   margin: 3.6rem 2.4rem 0;
@@ -517,8 +517,8 @@ a:visited {
   font-weight: 600;
   position: relative;
   margin-bottom: 8rem;
-  -webkit-text-stroke-color: #fff;
-  -webkit-text-stroke-width: 0.5px;
+  /* -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.5px; */
 
   display: flex;
   align-items: center;
@@ -528,7 +528,8 @@ a:visited {
   content: "";
   height: 3px;
   width: 10rem;
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  background-color: var(--color-primary-dark);
   right: -80%;
   border-radius: 100px;
   position: absolute;
@@ -540,7 +541,9 @@ a:visited {
 
   height: 3px;
   width: 10rem;
-  background-color: #ccc;
+  /* background-color: #ccc; */
+  background-color: var(--color-primary-dark);
+
   left: -80%;
   position: absolute;
 }
