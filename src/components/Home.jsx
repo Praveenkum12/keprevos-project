@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Service from "./Service";
 import Testimonial from "./Testimonial";
 import FeaturedIn from "./FeaturedIn";
+import ContactUs from "./ContactUs";
 
 function Home() {
   const [myElementIsVisible, setMyElementIsVisible] = useState(true);
@@ -16,10 +17,11 @@ function Home() {
       <main className="container bg-white">
         <About />
         <Service />
+        <FeaturedIn />
         <Testimonial />
         <Gallery />
-        <FeaturedIn />
       </main>
+      <ContactUs />
     </div>
   );
 }

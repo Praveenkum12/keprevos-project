@@ -251,6 +251,7 @@ a:visited {
 .bg-white {
   background-color: #fff;
   border-radius: 2rem;
+  padding-bottom: 2.2rem;
 }
 
 .about-section {
@@ -601,4 +602,108 @@ a:visited {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
+}
+
+/* CONTACT US SECTION */
+
+.contact-section {
+  margin-top: 3rem;
+}
+
+.contact-inner {
+  clip-path: polygon(
+    0% 0%,
+    100% 0,
+    100% 94%,
+    53% 94%,
+    50% 100%,
+    47% 94%,
+    0 94%
+  );
+
+  border-radius: 2rem;
+  background-color: var(--color-primary-dark);
+  height: 58rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 10rem;
+}
+
+.contact-left {
+  padding-top: 1.2rem;
+  padding-right: 6.4rem;
+}
+
+.contact-heading {
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  font-size: 6.2rem;
+  font-weight: 800;
+}
+
+.contact-para {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+}
+
+.send-btn {
+  background-color: var(--color-primary-light);
+  margin-top: 2.4rem;
+  align-self: flex-end;
+  padding: 0.8rem 2.4rem;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 100px;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  border-radius: 2rem;
+  padding: 1.2rem 2.4rem;
+  resize: none;
+  font-size: 1.4rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+
+input {
+  padding: 1.2rem 2.4rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--color-primary-light);
+}
+
+.user-name {
+  margin-bottom: 1.6rem;
+}
+
+.email {
+  margin-bottom: 2.4rem;
+}
+
+.contact-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-img {
+  width: 100%;
 }
