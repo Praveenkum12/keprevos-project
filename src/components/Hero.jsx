@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import heroImg from "../assets/Exclude.png";
+import { Link } from "react-scroll";
 
 function Hero({ setMyElementIsVisible }) {
   const myRef = useRef();
@@ -50,8 +51,17 @@ function Hero({ setMyElementIsVisible }) {
         />
       </div>
       <div className="btn-box">
-        <button className="learn-btn header-btn">Learn More</button>
-        <button className="get-touch-btn header-btn">Get in Touch</button>
+        <Link className="learn-btn header-btn">Learn More</Link>
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={4000}
+          className="get-touch-btn header-btn"
+        >
+          Get in Touch
+        </Link>
       </div>
     </header>
   );

@@ -370,7 +370,7 @@ a:visited {
   font-size: 3.6rem;
   font-weight: 600;
   position: relative;
-  margin: 4.6rem 0;
+  margin: 2rem 0 4.6rem;
   padding-bottom: 0.4rem;
   position: relative;
 }
@@ -607,7 +607,9 @@ a:visited {
 /* CONTACT US SECTION */
 
 .contact-section {
-  margin-top: 3rem;
+  margin-top: 4.8rem;
+  z-index: 1;
+  position: relative;
 }
 
 .contact-inner {
@@ -706,4 +708,152 @@ textarea:focus {
 
 .contact-img {
   width: 100%;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  background-color: #d9d9d9;
+  height: max-content;
+  padding-bottom: 4.8rem;
+  transform: translateY(-3.5rem);
+}
+
+.footer-container {
+  padding-top: 6.4rem;
+  width: 140rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.footer-left {
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 2rem;
+  box-shadow: 0 4px 24px 6px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s;
+}
+
+.footer-left:hover {
+  box-shadow: 0 4px 24px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-img {
+  cursor: pointer;
+}
+
+.footer-para {
+  text-align: center;
+  width: 30rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.footer-btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.footer-middle {
+  margin: 0 1rem;
+}
+
+.footer-out {
+  margin: 0 4rem;
+}
+
+.footer-sub-heading {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.footer-seg {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.address,
+.phone-number {
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+  margin-top: 1.6rem;
+}
+
+.phoneIcon {
+  height: 2.5rem;
+  aspect-ratio: 1;
+}
+
+.addressIcon {
+  height: 4rem;
+  aspect-ratio: 1;
+}
+
+.footer-heading-side {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+}
+
+.mail-input {
+  border-radius: 0;
+  padding: 1rem 1.4rem;
+  font-size: 1.4rem;
+  flex: 1;
+  background-color: transparent;
+}
+
+.mail-input::placeholder {
+  text-transform: lowercase;
+  font-family: inherit;
+  font-size: 1.4rem;
+}
+
+.subscribe-btn {
+  color: #fff;
+  background-color: red;
+  letter-spacing: 0.5px;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: rgb(221, 0, 0);
+}
+
+.form-for-news {
+  border: 2px solid #fff;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.mail-input:focus {
+  box-shadow: none;
+}
+
+.social-box {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+}
+
+.social-box a {
+  cursor: pointer;
 }

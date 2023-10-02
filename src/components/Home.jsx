@@ -7,6 +7,7 @@ import Service from "./Service";
 import Testimonial from "./Testimonial";
 import FeaturedIn from "./FeaturedIn";
 import ContactUs from "./ContactUs";
+import Footer from "./Footer";
 
 function Home() {
   const [myElementIsVisible, setMyElementIsVisible] = useState(true);
@@ -22,6 +23,7 @@ function Home() {
         <Gallery />
       </main>
       <ContactUs />
+      <Footer />
     </div>
   );
 }
