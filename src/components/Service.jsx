@@ -2,6 +2,12 @@ import designOne from "../assets/DeveloperImg.png";
 import designTwo from "../assets/uiUxDesigner.png";
 import designThree from "../assets/marketingImg.png";
 
+import dirtOne from "../assets/dirtOne.png";
+import dirtTwo from "../assets/dirtTwo.png";
+import dirtThree from "../assets/dirtThree.png";
+import dirtFour from "../assets/dirtFour.png";
+import dirtFive from "../assets/dirtFive.png";
+
 function Service() {
   return (
     <section
@@ -49,6 +55,36 @@ function Service() {
           </div>
         </div>
       </div>
+
+      <img
+        src={dirtOne}
+        alt="some additoinal stuffs to make webpage beauty"
+        className="one dirt"
+      />
+
+      <img
+        src={dirtTwo}
+        alt="some additoinal stuffs to make webpage beauty"
+        className="two dirt"
+      />
+
+      <img
+        src={dirtThree}
+        alt="some additoinal stuffs to make webpage beauty"
+        className="three dirt"
+      />
+
+      <img
+        src={dirtFour}
+        alt="some additoinal stuffs to make webpage beauty"
+        className="four dirt"
+      />
+
+      <img
+        src={dirtFive}
+        alt="some additoinal stuffs to make webpage beauty"
+        className="five dirt"
+      />
     </section>
   );
 }
