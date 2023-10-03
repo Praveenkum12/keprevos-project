@@ -1,6 +1,28 @@
-import getInTouchImg from "../assets/getInTouchImg.png";
+// import getInTouchImg from "../assets/getInTouchImg.png";
+import { useState } from "react";
+import ThreeDWomen from "../assets/3DWomenTwo.png";
 
 function ContactUs() {
+  const [userName, setUserName] = useState("");
+  const [mail, setMail] = useState("");
+  const [msg, setMsg] = useState("");
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    if (!userName || !mail) return;
+    if (userName.length <= 3) {
+      setUserName("");
+      setMail("");
+      setMsg("");
+      alert("Hey Little Jimmy, Enter a valid Name. I am not dumb as you...");
+      return;
+    }
+    setUserName("");
+    setMail("");
+    setMsg("");
+    alert(`Hello ${userName}, We will reach you soon. STAY STRONG MY BOY!!!😉`);
+  }
+
   return (
     <section
       className="section contact-section container"
@@ -18,17 +40,21 @@ function ContactUs() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nemo
               adipisci ipsam quos sapiente molestiae porro.
             </p>
-            <form className="form">
+            <form className="form" onSubmit={handleFormSubmit}>
               <input
                 type="text"
                 className="user-name"
                 placeholder="full name"
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
                 required
               />
               <input
                 type="email"
                 className="email"
                 placeholder="Your Email"
+                value={mail}
+                onChange={(e) => setMail(e.target.value)}
                 required
               />
 
@@ -36,6 +62,8 @@ function ContactUs() {
                 name="request"
                 cols="30"
                 rows="5"
+                value={msg}
+                onChange={(e) => setMsg(e.target.value)}
                 placeholder="How can we help you?"
               ></textarea>
 
@@ -44,7 +72,7 @@ function ContactUs() {
           </div>
 
           <div className="contact-right">
-            <img src={getInTouchImg} alt="contact" className="contact-img" />
+            <img src={ThreeDWomen} alt="contact" className="contact-img" />
           </div>
         </div>
       </div>

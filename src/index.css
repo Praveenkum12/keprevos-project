@@ -727,7 +727,8 @@ textarea:focus {
 }
 
 .contact-img {
-  width: 100%;
+  width: 80%;
+  object-fit: cover;
 }
 
 /* FOOTER SECTION */
@@ -768,6 +769,13 @@ textarea:focus {
 
 .footer-img {
   cursor: pointer;
+  width: 90%;
+}
+
+.footer-left a:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-para {
