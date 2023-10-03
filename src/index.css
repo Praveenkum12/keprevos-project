@@ -411,6 +411,10 @@ a:visited {
 
 /* TESTIMONIAL SECTION */
 
+.section-testimonial {
+  user-select: none;
+}
+
 .testimonial-heading {
   text-align: center;
   text-transform: uppercase;
@@ -941,4 +945,44 @@ textarea:focus {
 .enterprise-span div,
 .enterprise-span {
   display: inline-block;
+}
+
+.footer-right {
+  position: relative;
+}
+
+.praveen-logo {
+  position: absolute;
+  width: 17rem;
+  display: inline-block;
+  right: 1.5rem;
+  cursor: pointer;
+  bottom: -4.5rem;
+  user-select: none;
+}
+
+.authors {
+  position: absolute;
+  bottom: 2.4rem;
+  right: 1.6rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  opacity: 0;
+
+  transition: all 0.3s;
+}
+
+.praveen-logo:hover + .authors {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.authors:hover {
+  opacity: 1;
+}
+
+.praveen-logo:hover {
+  filter: blur(2px);
 }

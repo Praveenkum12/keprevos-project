@@ -8,12 +8,22 @@ import twit from "../svg/twit.svg";
 import indeed from "../svg/indeed.svg";
 import { useRef } from "react";
 import { useEffect } from "react";
+import praveenImg from "../assets/praveen.png";
+import { useState } from "react";
 
 function Footer({ handleLearnClick }) {
   const yearRef = useRef();
   useEffect(function () {
     yearRef.current.textContent = new Date().getFullYear();
   });
+
+  const [mail, setMail] = useState("");
+
+  function handleSubscription(e) {
+    e.preventDefault();
+    alert("You are Subscribed now. Have a Great day.🎉");
+    setMail("");
+  }
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -79,11 +89,13 @@ function Footer({ handleLearnClick }) {
           data-aos-once="true"
         >
           <h3 className="footer-heading-side">🗞️ For Daily Updates</h3>
-          <form className="form-for-news">
+          <form className="form-for-news" onSubmit={handleSubscription}>
             <input
               type="email"
               className="mail-input"
               placeholder="xyz@gmail.com"
+              value={mail}
+              onChange={(e) => setMail(e.target.value)}
               required
             />
             <button className="subscribe-btn">Subscribe</button>
@@ -105,6 +117,15 @@ function Footer({ handleLearnClick }) {
             <Link to="/">
               <img src={twit} alt="twitter" />
             </Link>
+          </div>
+
+          <div className="author-seg">
+            <img
+              src={praveenImg}
+              alt="author's logo"
+              className="praveen-logo"
+            />
+            <div className="authors">Designed by Madan 💖</div>
           </div>
         </div>
       </div>

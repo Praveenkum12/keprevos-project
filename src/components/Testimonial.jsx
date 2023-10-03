@@ -85,7 +85,7 @@ function Testimonial() {
                 faucibus nulla aenean orci. &rdquo;
               </p>
               <div className="client-detail-box">
-                <span className="client-name">Brian Dean</span>
+                <span className="client-name">Olivia brookes</span>
                 <span className="client-role">Co-Founder, abc company </span>
               </div>
             </div>
@@ -112,7 +112,7 @@ function Testimonial() {
                 faucibus nulla aenean orci. &rdquo;
               </p>
               <div className="client-detail-box">
-                <span className="client-name">Brian Dean</span>
+                <span className="client-name">Andy Garcia</span>
                 <span className="client-role">Co-Founder, abc company </span>
               </div>
             </div>
@@ -139,7 +139,7 @@ function Testimonial() {
                 faucibus nulla aenean orci. &rdquo;
               </p>
               <div className="client-detail-box">
-                <span className="client-name">Brian Dean</span>
+                <span className="client-name">Catherine Pitt</span>
                 <span className="client-role">Co-Founder, abc company </span>
               </div>
             </div>
