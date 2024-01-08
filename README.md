@@ -1,8 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# KEPREVOS PROJECT
+It is modern looking webpage. Me and my friend tried to design and develop a webpage for the first time. Keprevos is a startup company in Pondicherry, we tried to impress them with this project 😊. I developed this project with React and for animation I used framer motion in this project. Check it out.
+WEBSITE: https://keprevos-project.netlify.app/
